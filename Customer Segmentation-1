@@ -1,0 +1,7 @@
+Work Summary: Used K-Means Clustering to group customers based on spending patterns and income. 
+By using the "Elbow Method," the optimal number of clusters ($K$) was identified to ensure the groups were distinct and meaningful.
+4 Learning Outcomes:
+Unsupervised Insight: Learned how to find "hidden groups" in data without using pre-defined labels.
+Optimal $K$ Selection: Mastered the Elbow Method to balance model complexity with cluster accuracy.
+Centroid Logic: Understood how the algorithm iteratively moves "center points" to define the heart of each customer persona.
+Data-Driven Marketing: Developed the ability to translate mathematical clusters into actionable business segments (e.g., "High-Spenders" vs. "Bargain Hunters").
