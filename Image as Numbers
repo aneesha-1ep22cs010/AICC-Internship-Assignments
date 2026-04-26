@@ -1,0 +1,15 @@
+This project explored the mathematical foundation of digital images. 
+Using the OpenCV or PIL library, I loaded an image file and "deconstructed" it into its raw numerical form. 
+I analyzed the shape (height, width), the pixel values (0–255), and the channels (Red, Green, Blue). 
+This exercise proved that to a computer, a beautiful sunset is actually just a large 3D matrix of integers.
+
+import cv2
+
+image = cv2.imread('image.jpg')
+print(f"Shape (H, W, Channels): {image.shape}")
+print(f"Sample Pixel (R, G, B): {image[100, 100]}") # Sample pixel at coordinates
+
+Matrix Representation: Understood that images are stored as NumPy arrays, where every pixel's color is a combination of three numerical values.
+Channel Intuition: Learned how the RGB (Red, Green, Blue) model creates millions of colors by varying the intensity of three light channels.
+Spatial Resolution: Realized how the "Height x Width" dimensions dictate the total amount of data a model must process.
+Bit Depth Awareness: Recognized that the 0–255 range represents 8-bit color depth, which is the standard for most digital imagery.
