@@ -1,0 +1,44 @@
+The 5 Documents (Corpus)
+Doc 1: "The cat sat on the mat."
+
+Doc 2: "The dog chased the cat."
+
+Doc 3: "The bird flew over the mat."
+
+Doc 4: "A dog barked at the bird."
+
+Doc 5: "The cat and dog are friends."
+
+from sklearn.feature_extraction.text import TfidfVectorizer
+import pandas as pd
+
+corpus = [
+    "The cat sat on the mat.",
+    "The dog chased the cat.",
+    "The bird flew over the mat.",
+    "A dog barked at the bird.",
+    "The cat and dog are friends."
+]
+
+# Initialize and fit the vectorizer
+vectorizer = TfidfVectorizer(stop_words='english')
+tfidf_matrix = vectorizer.fit_transform(corpus)
+
+# Get feature names (the words)
+feature_names = vectorizer.get_feature_names_out()
+
+# Create a readable table for the first document
+df = pd.DataFrame(tfidf_matrix.toarray(), columns=feature_names)
+print("Top Keywords for Document 1:")
+print(df.iloc[0].sort_values(ascending=False).head(3))
+
+Top Keywords & Explanation
+For Document 1 ("The cat sat on the mat"), the top keywords would likely be:
+
+Sat: High TF-IDF because it only appears in this document (Unique).
+
+Mat: Moderate TF-IDF because it appears in Doc 1 and Doc 3 (Slightly less unique).
+
+Cat: Lower TF-IDF compared to "Sat" because it appears in 3 out of 5 documents (Common).
+
+Why this matters: If a user searches for "Sat," this document is the perfect match. If they search for "The," every document matches, so "The" has a TF-IDF score of 0.
