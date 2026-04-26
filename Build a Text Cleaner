@@ -1,0 +1,11 @@
+Work Summary: Developed a Python script to automate the cleaning of text data. The pipeline included converting to lowercase, removing punctuation, and filtering out "Stopwords" (common words like 'is', 'the', 'at' that carry little meaning).
+
+4 Learning Outcomes:
+
+Text Normalization: Mastered the use of .lower() and string manipulation to ensure "Apple" and "apple" are treated as the same token.
+
+Stopword Filtering: Learned to use libraries like NLTK or SpaCy to remove high-frequency, low-value words to reduce data "noise."
+
+Regular Expressions (Regex): Gained experience using patterns to quickly identify and strip out unwanted punctuation and special characters.
+
+Data Reduction: Observed how cleaning text significantly reduces the "vocabulary size," making ML models faster and more accurate.
