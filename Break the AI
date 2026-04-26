@@ -1,0 +1,14 @@
+Work Summary
+In this "stress-test" assignment, I acted as a Red Teamer, attempting to confuse a Large Language Model (LLM). 
+I used tricky prompts involving logical paradoxes, ambiguous pronouns, and "jailbreak" style phrasing to see where the AI’s reasoning fails.
+I documented the results, noting when the AI hallucinated (made things up), got stuck in a loop, or gave a perfectly logical answer despite the trickery.
+
+Learning Outcomes
+
+Hallucination Awareness: Identified the specific types of prompts that cause AI to confidently provide incorrect or "made up" information.
+
+Boundary Testing: Learned the safety and logic limits of modern LLMs, understanding that they are pattern-matchers, not "truth-tellers."
+
+Logic Paradoxes: Observed how AI handles "The Liar's Paradox" or complex riddles, revealing its underlying statistical nature.
+
+Failure Documentation: Developed the habit of rigorous logging—recording the input, the unexpected output, and the suspected reason for the failure.
