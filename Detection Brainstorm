@@ -1,0 +1,16 @@
+This was a design-thinking assignment focused on the practical applications of Object Detection and Facial Recognition. 
+I brainstormed 5 distinct use cases and developed a technical blueprint for one: an "Automated Attendance System." 
+My design outlined the hardware (camera), the preprocessing (grayscale/alignment), and the model (FaceNet/Haar Cascades) needed to identify students in a classroom.
+
+5 Use Cases:
+Agriculture: Detecting pests on leaves via drone footage.
+Retail: "Self-Checkout" systems that identify groceries without barcodes.
+Safety: Detecting if a factory worker is wearing a required helmet.
+Medicine: Identifying tumors in X-ray or MRI scans.
+Traffic: Counting vehicles at an intersection to optimize light timing.
+
+Learning Outcomes
+Real-World Application: Learned to identify high-value problems that can be solved specifically through visual automation.
+Solution Architecture: Gained experience in designing a full "end-to-end" system, from data capture to final decision.
+Bounding Box Logic: Understood how detection models work by predicting "coordinates" $(x, y, w, h)$ around identified objects.
+Ethical Consideration: Developed an awareness of the privacy and bias challenges inherent in facial recognition technology.
