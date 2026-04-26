@@ -1,0 +1,20 @@
+For this assignment, I built a Keyword Extractor designed to summarize long articles automatically. 
+The app utilizes the TF-IDF (Term Frequency-Inverse Document Frequency) algorithm to identify which words carry the most "thematic weight." 
+By filtering out common "stopwords" and focusing on high-frequency, high-relevance terms, the app can transform a thousand-word document into a concise list of 5–10 core topics.
+
+import pandas as pd
+from sklearn.feature_extraction.text import TfidfVectorizer
+
+text_data = ["Your long article text goes here..."]
+vectorizer = TfidfVectorizer(stop_words='english')
+matrix = vectorizer.fit_transform(text_data)
+
+# Extract top 5 keywords
+scores = zip(vectorizer.get_feature_names_out(), matrix.toarray()[0])
+sorted_scores = sorted(scores, key=lambda x: x[1], reverse=True)
+print("Top Keywords:", sorted_scores[:5])
+
+Application Integration: Learned how to wrap a machine learning model into a functional "mini-app" that solves a specific user problem.
+Information Retrieval: Mastered the ability to rank text data by importance rather than just frequency.
+Summarization Logic: Understood how identifying key noun-phrases can serve as a primitive form of document summarization.
+Stopword Impact: Observed how removing "utility words" (the, is, an) is essential for revealing the true subject of a text.
