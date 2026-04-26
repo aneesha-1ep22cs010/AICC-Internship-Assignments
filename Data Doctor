@@ -1,0 +1,25 @@
+import pandas as pd
+
+# 1. Load the "dirty" dataset
+df = pd.read_csv('raw_data.csv')
+
+# 2. Remove exact duplicates
+df.drop_duplicates(inplace=True)
+
+# 3. Handle missing values
+# Fill numeric missing values with the average
+df['Salary'] = df['Salary'].fillna(df['Salary'].mean())
+# Drop rows where critical info (like 'User_ID') is missing
+df.dropna(subset=['User_ID'], inplace=True)
+
+# 4. Standardize Text (Case & Whitespace)
+df['City'] = df['City'].str.strip().str.title()
+
+# 5. Result
+print("Cleaned Dataset Info:")
+print(df.info())
+
+Statistical Accuracy: If you have 10 duplicate rows of a high-salary employee, your "average salary" calculation will be artificially inflated and incorrect.
+Algorithm Stability: Most Machine Learning models will literally crash or throw errors if they encounter a NaN (Not a Number) value during training.
+Searchability: If your data has "apple" and "Apple ", a computer sees them as two different fruits. Standardizing text ensures your filters and "Group By" operations work perfectly.
+Professional Credibility: Insights derived from "dirty" data lead to bad business decisions. A "Data Doctor" ensures the foundation of the analysis is trustworthy.
