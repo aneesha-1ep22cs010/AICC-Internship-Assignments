@@ -1,0 +1,13 @@
+I developed a Sentiment Analysis tool to categorize text as "Positive" or "Negative." 
+The process involved taking 5 raw movie reviews, cleaning the text using the "Text Cleaner" pipeline, and using a classifier (like VADER or a Naive Bayes model) to calculate a sentiment score. 
+I tested the model on a mix of obvious reviews (e.g., "Amazing acting!") and tricky ones (e.g., "The plot was a bit slow, but I loved the ending") to see how accurately the AI captures human opinion.
+
+Learning Outcomes
+
+Polarlity Detection: Learned how algorithms assign numerical scores to words (e.g., "excellent" = +0.8, "terrible" = -0.9) to determine overall mood.
+
+Contextual Sensitivity: Observed how "negation" (e.g., "not bad") can confuse simple models that only look at individual words.
+
+Threshold Setting: Understood how to define a "Neutral" zone for reviews that aren't clearly happy or sad.
+
+Accuracy Validation: Developed a "Test Set" approach to verify if the AI’s judgment matches a human's emotional response.
