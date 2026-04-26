@@ -1,0 +1,9 @@
+Work Summary: Analyzed "raw" human language by collecting 20 messy sentences. 
+Identified "noise" such as slang, emojis, and typos that prevent computers from understanding text.
+
+4 Learning Outcomes:
+
+Noise Identification: Recognized that raw text is "unstructured data" that requires significant cleaning before analysis.
+Linguistic Variation: Observed how the same meaning can be expressed through different "surface forms" (e.g., "u" vs. "you").
+Feature Complexity: Realized that emojis and punctuation often carry emotional "sentiment" that simple word-counts might miss.
+Preprocessing Roadmap: Determined the necessary steps (Normalization, Tokenization) required to turn "human talk" into "machine data."
