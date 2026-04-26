@@ -1,0 +1,14 @@
+Work Summary
+This project explored Word Embeddings, moving beyond exact spelling to find "conceptual closeness." 
+I identified 5 word pairs and used their mathematical distance in a vector space to explain their similarity. 
+For example, while "King" and "Queen" are different words, they share a high semantic similarity because they appear in similar contexts (royalty, power, history).
+
+Learning Outcomes
+
+Vector Proximity: Understood that in modern NLP, words are "points in space," and similar meanings are physically closer to each other.
+
+Synonym vs. Context: Realized that words don't have to be synonyms to be semantically related (e.g., "Coffee" and "Cup").
+
+Dimensionality: Learned that AI understands words through hundreds of "features" (gender, royalty, verb-tense) simultaneously.
+
+Mapping Concepts: Developed the intuition to explain why "Apple" (the fruit) is semantically closer to "Orange" than it is to "Apple" (the tech company) depending on the context.
