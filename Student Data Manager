@@ -1,0 +1,37 @@
+def student_manager():
+    # Data Storage using a list of dictionaries
+    students = [
+        {"name": "Alice", "score": 88},
+        {"name": "Bob", "score": 92},
+        {"name": "Charlie", "score": 78},
+        {"name": "David", "score": 95},
+        {"name": "Eve", "score": 84}
+    ]
+
+    total_score = 0
+    topper = students[0]
+
+    print("--- Student Grades ---")
+    for s in students:
+        # Calculate Grade
+        if s['score'] >= 90: grade = "A"
+        elif s['score'] >= 80: grade = "B"
+        else: grade = "C"
+        
+        print(f"{s['name']}: {s['score']} (Grade: {grade})")
+
+        # Track Total for Average
+        total_score += s['score']
+
+        # Find Topper
+        if s['score'] > topper['score']:
+            topper = s
+
+    # Final Calculations
+    average = total_score / len(students)
+
+    print("\n--- Class Statistics ---")
+    print(f"Class Average: {average}")
+    print(f"Class Topper: {topper['name']} with {topper['score']} points")
+
+student_manager()
