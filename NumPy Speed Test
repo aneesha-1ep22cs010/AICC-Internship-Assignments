@@ -1,0 +1,20 @@
+import numpy as np
+import time
+
+size = 1000000
+
+# 1. Python List Performance
+list_data = list(range(size))
+start_time = time.time()
+list_result = [x * 2 for x in list_data]  # Doubling numbers
+list_duration = time.time() - start_time
+
+# 2. NumPy Array Performance
+numpy_data = np.arange(size)
+start_time = time.time()
+numpy_result = numpy_data * 2            # Vectorized operation
+numpy_duration = time.time() - start_time
+
+print(f"Python List Time: {list_duration:.5f} seconds")
+print(f"NumPy Array Time: {numpy_duration:.5f} seconds")
+print(f"Speedup Factor: {list_duration / numpy_duration:.2f}x faster")
