@@ -1,0 +1,15 @@
+Using K-Means Clustering, we grouped mall customers based on "Annual Income" and "Spending Score" without giving the model any pre-set labels.
+
+💡 The 3 Typical Customer Groups
+The Budget Conscious: High income but very low spending. These are "savers" who might respond to premium value ads.
+
+The Target Stars: Moderate-to-high income and high spending. These are your most valuable customers.
+
+The Window Shoppers: Low income and low spending. They visit often but rarely buy.
+
+🎓 Learning Outcomes
+Predictive vs. Descriptive: You’ve learned that Linear Regression predicts a future value, while K-Means describes current hidden patterns.
+
+Model Evaluation: Recognizing that a "False Positive" in a spam filter is more annoying than a "False Negative"—teaching you that ML isn't just about accuracy, but about cost of error.
+
+Unsupervised Insight: Understanding that K-Means is a "blind" algorithm; it doesn't know what a "customer" is—it just sees mathematical clusters in space.
