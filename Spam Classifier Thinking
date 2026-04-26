@@ -1,0 +1,23 @@
+This was a conceptual design task for a Binary Classifier. Unlike regression, the goal here is to put data into "buckets" (Spam vs. Not Spam).
+
+💡 System Design
+Features (Inputs):
+
+Keywords (e.g., "Free," "Winner," "Urgent").
+
+The sender's domain reputation.
+
+Number of links in the email body.
+
+All-caps subject lines.
+
+Data Needed: Thousands of emails labeled "Spam" or "Ham" (normal) to teach the model patterns.
+
+Possible Mistakes:
+
+False Positive (The worst mistake): Marking an important job offer as Spam.
+
+False Negative: Letting a phishing email into the main Inbox.
+
+Binary Classification: Learned to distinguish between $Y=1$ (Spam) and $Y=0$ (Not Spam) based on feature patterns.
+Error Analysis: Understood the critical real-world difference between False Positives and False Negatives.
