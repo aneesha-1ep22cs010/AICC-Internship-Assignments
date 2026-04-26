@@ -1,0 +1,30 @@
+The "Build Your First Dataset" project involved creating a synthetic (or observed) dataset to explore correlation.
+
+Domain Selection: Chose the relationship between Study Hours and Exam Marks.
+
+Data Generation: Created a 10-row sample to simulate a small classroom.
+
+Role Identification: Categorized the columns into "Features" (Inputs) and "Labels" (Targets).
+
+Hypothesis Testing: Formulated a prediction about how the Input affects the Output.
+
+Student ID,Study Hours (X),Sleep Hours,Attendance %,Exam Marks (Y)
+101,2,8,90,65
+102,5,7,95,82
+103,1,9,80,58
+104,8,6,100,94
+105,4,7,85,76
+
+Identifying ComponentsFeatures ($X$ / Inputs): Study Hours, Sleep Hours, Attendance %. These are the variables we believe cause the change in the score.
+Label ($Y$ / Target): Exam Marks. This is the specific value we want our model to eventually predict.
+Observation Unit: Each row represents one unique Student Instance.
+
+Predicting the Relationship
+By looking at the data, we can predict a Positive Linear Correlation.
+The Logic: As "Study Hours" increases, "Exam Marks" also tends to increase.
+The Nuance: Notice that "Sleep Hours" often decreases as "Study Hours" gets very high, suggesting a "Diminishing Return" where studying too much might hurt performance if sleep is sacrificed.
+
+Learning OutcomesFeature Selection: Learning that not all data is useful. (e.g., a "Student Name" is a feature, but it doesn't help predict a grade, so we exclude it from the ML logic).
+Understanding Causality: Distinguishing between the Independent Variable (Hours) and the Dependent Variable (Marks).
+Data Quality Intuition: Realizing that real-world data is rarely perfect—there are often "noise" factors (like sleep or luck) that affect the final label.
+Hypothesis Framing: Training your brain to look for patterns ($Y = mX + c$) before you even start writing code.
