@@ -1,0 +1,19 @@
+import pandas as pd
+
+# 1. Load the dataset (Assuming a CSV named 'data.csv')
+df = pd.read_csv('data.csv')
+
+# 2. Display top 5 rows
+print("--- Top 5 Rows ---")
+print(df.head())
+
+# 3. Find highest value column (Example: 'Revenue' or 'Score')
+# We'll dynamically find the numeric column with the highest single value
+numeric_df = df.select_dtypes(include=['number'])
+max_vals = numeric_df.max()
+top_col = max_vals.idxmax()
+print(f"\nColumn with the highest single value: {top_col} ({max_vals.max()})")
+
+# 4. Count missing values
+print("\n--- Missing Values Per Column ---")
+print(df.isnull().sum())
