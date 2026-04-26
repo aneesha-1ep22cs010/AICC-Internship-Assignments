@@ -1,0 +1,24 @@
+def logic_builder(limit):
+    counts = {"Fizz": 0, "Buzz": 0, "FizzBuzz": 0, "Numbers": 0}
+    
+    for i in range(1, limit + 1):
+        if i % 3 == 0 and i % 5 == 0:
+            print("FizzBuzz")
+            counts["FizzBuzz"] += 1
+        elif i % 3 == 0:
+            print("Fizz")
+            counts["Fizz"] += 1
+        elif i % 5 == 0:
+            print("Buzz")
+            counts["Buzz"] += 1
+        else:
+            print(i)
+            counts["Numbers"] += 1
+            
+    return counts
+
+# Execute and print results
+results = logic_builder(50)
+print("\n--- Summary Report ---")
+for key, value in results.items():
+    print(f"{key}: {value} occurrences")
