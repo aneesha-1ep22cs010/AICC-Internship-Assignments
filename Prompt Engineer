@@ -1,0 +1,14 @@
+Work Summary
+I practiced the art of Prompt Engineering by creating high-quality instructions for three distinct tasks: a Resume, a Business Idea, and a Study Plan. 
+I performed a "A/B Test" by comparing Weak Prompts (vague and short) against Strong Prompts (using Persona, Context, Task, and Format).
+For instance, I compared "Write me a resume" against "Act as a professional Recruiter; write a resume for a Junior Data Scientist with 3 projects, focusing on Python and SQL skills, in a clean bulleted format."
+
+Learning Outcomes
+
+Instruction Clarity: Mastered the "Context-Task-Constraint" framework to get high-quality outputs on the first try.
+
+Persona Adoption: Learned that telling an AI to "Act as an expert" significantly changes the tone and depth of its response.
+
+Iterative Refinement: Understood that the first prompt is just a starting point; "prompting" is a conversation that requires fine-tuning.
+
+Output Control: Gained the ability to dictate the structure of the AI's response (e.g., "Table format only," "Maximum 100 words").
