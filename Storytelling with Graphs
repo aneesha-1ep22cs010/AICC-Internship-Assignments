@@ -1,0 +1,33 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+# 1. Bar Chart: Sales Comparison
+categories = ['Smartphones', 'Laptops', 'Tablets', 'Wearables', 'Accessories']
+sales = [1500, 1200, 800, 600, 400]
+plt.bar(categories, sales, color='skyblue')
+plt.title('Units Sold per Category')
+plt.savefig('bar_chart.png')
+plt.show()
+
+# 2. Pie Chart: Market Share
+market_share = [40, 25, 15, 10, 10]
+plt.pie(market_share, labels=categories, autopct='%1.1f%%')
+plt.title('Market Share Distribution')
+plt.savefig('pie_chart.png')
+plt.show()
+
+# 3. Histogram: Age Distribution
+ages = np.random.normal(30, 10, 500) # Simulating 500 customers
+plt.hist(ages, bins=20, color='lightgreen', edgecolor='black')
+plt.title('Customer Age Frequency')
+plt.savefig('histogram.png')
+plt.show()
+
+The Data Story: "The Tech Store Insights"
+Based on our visualizations, a clear story emerges:
+
+Dominance: The bar and pie charts reveal that Smartphones are our powerhouse, accounting for nearly 40% of our total market share and the highest unit sales. This suggests our brand is currently perceived primarily as a mobile-first company.
+
+Growth Opportunity: While "Wearables" and "Accessories" have lower sales, they represent a significant "long tail" of the business.
+
+The Ideal Customer: The histogram shows a "Normal Distribution" of customer ages, peaking sharply around 30 years old. This tells us our marketing efforts should be tailored toward "Millennials" and young professionals, as they constitute the bulk of our purchasing power.
